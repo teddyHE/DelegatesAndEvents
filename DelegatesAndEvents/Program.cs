@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace DelegatesAndEvents
 {
 
-    public delegate void WorkPerformedHandler(int hours, WorkType workType);
+    public delegate int WorkPerformedHandler(int hours, WorkType workType);
 
     class Program
     {
@@ -22,15 +22,10 @@ namespace DelegatesAndEvents
             WorkPerformedHandler del3 =
                 new WorkPerformedHandler(WorkPerformed3);
 
-            //del1(5, WorkType.Golf);
-            //del2(10, WorkType.GenerateReports);
-
-            //DoWork(del2);
-
-            //Call several delegates
             del1 += del2 + del3;
 
-            del1(10, WorkType.GenerateReports);
+            int finalHours = del1(10, WorkType.GenerateReports);
+            Console.WriteLine(finalHours);
 
         }
 
@@ -38,19 +33,22 @@ namespace DelegatesAndEvents
         {
             del(5, WorkType.GoToMeetings);
         }
-        static void WorkPerformed1(int hours, WorkType workType)
+        static int WorkPerformed1(int hours, WorkType workType)
         {
             Console.WriteLine("WorkPerformed1 call " + hours.ToString());
+            return hours + 1;
         }
 
-        static void WorkPerformed2(int hours, WorkType workType)
+        static int WorkPerformed2(int hours, WorkType workType)
         {
             Console.WriteLine("WorkPerformed2 call " + hours.ToString());
+            return hours + 2;
         }
 
-        static void WorkPerformed3(int hours, WorkType workType)
+        static int WorkPerformed3(int hours, WorkType workType)
         {
             Console.WriteLine("WorkPerformed3 call " + hours.ToString());
+            return hours + 3;
         }
     }
 
