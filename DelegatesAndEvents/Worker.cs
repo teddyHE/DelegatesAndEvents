@@ -8,11 +8,11 @@ namespace DelegatesAndEvents
 {
     //it is better if you put your delegates above the class 
     //that it is using them.
-    public delegate int WorkPerformedHandler(int hours, WorkType workType);
+    //public delegate int WorkPerformedHandler(object sender, WorkPerformedEventArgs e);
 
     class Worker
     {
-        public event WorkPerformedHandler WorkPerformed;
+        public event EventHandler<WorkPerformedEventArgs> WorkPerformed;
         public event EventHandler WorkCompleted;
 
         public void Dowork(int hours, WorkType workType)
@@ -34,10 +34,10 @@ namespace DelegatesAndEvents
             //    WorkPerformed(hours, workType);
             //}
 
-            var del = WorkPerformed as WorkPerformedHandler;
+            var del = WorkPerformed as EventHandler<WorkPerformedEventArgs>;
             if (del != null)
             {
-                del(hours, workType);
+                del(this, new WorkPerformedEventArgs(hours, workType));
             }
         }
 
