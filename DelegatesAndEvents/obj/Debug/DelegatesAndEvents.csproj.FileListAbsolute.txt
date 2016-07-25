@@ -1,0 +1,7 @@
+D:\Wahlin Group\Courses\PluralSight\C# Events and Delegates\Module2\Code\Before\DelegatesAndEvents\DelegatesAndEvents\bin\Debug\DelegatesAndEvents.exe.config
+C:\Users\InspectDev\Documents\Pluralsight\C#\Intermediate\C# events delegates and lambdas\Module 2\Code\Before\DelegatesAndEvents\DelegatesAndEvents\bin\Debug\DelegatesAndEvents.exe.config
+C:\Users\InspectDev\Documents\Pluralsight\C#\Intermediate\C# events delegates and lambdas\Module 2\Code\Before\DelegatesAndEvents\DelegatesAndEvents\bin\Debug\DelegatesAndEvents.exe
+C:\Users\InspectDev\Documents\Pluralsight\C#\Intermediate\C# events delegates and lambdas\Module 2\Code\Before\DelegatesAndEvents\DelegatesAndEvents\bin\Debug\DelegatesAndEvents.pdb
+C:\Users\InspectDev\Documents\Pluralsight\C#\Intermediate\C# events delegates and lambdas\Module 2\Code\Before\DelegatesAndEvents\DelegatesAndEvents\obj\Debug\DelegatesAndEvents.csprojResolveAssemblyReference.cache
+C:\Users\InspectDev\Documents\Pluralsight\C#\Intermediate\C# events delegates and lambdas\Module 2\Code\Before\DelegatesAndEvents\DelegatesAndEvents\obj\Debug\DelegatesAndEvents.exe
+C:\Users\InspectDev\Documents\Pluralsight\C#\Intermediate\C# events delegates and lambdas\Module 2\Code\Before\DelegatesAndEvents\DelegatesAndEvents\obj\Debug\DelegatesAndEvents.pdb
